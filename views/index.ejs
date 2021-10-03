@@ -1,13 +1,15 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/Content/app.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+<%- include partials/header.ejs %>
 
-    <script src="/Scripts/app.js"></script>
-  </body>
-</html>
+<%- include partials/main_nav.ejs %>
+ 
+
+<!-- Main Content -->
+<main class="container">
+  <div class="jumbotron">
+    <h1 class="display-4">Welcome to the <%= title %> page</h1>
+  </div>
+</main>
+
+<%- include partials/bottom_nav.ejs %>
+
+<%- include partials/footer.ejs %>
