@@ -31,4 +31,10 @@ router.get('/contact', function(req, res, next) {
   res.render('contact', { title: 'Contact' });
 });
 
+/* Redirect to home page after contact */
+router.post('/contact-form', function(req, res, next){
+  console.log("Contact form request: ", req.body);
+  res.redirect('/');
+})
+
 module.exports = router;
